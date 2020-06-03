@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ITEM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>      
+    <div class="item-main">
+        <div class="item-left">
+            <img id="item_img" src="img/img1.jpg" alt="">
+        </div>
+        <div class="item-right">
+            <div class="item-name">
+                <h1 id="item_header">ITEM 123</h1> 
+            </div>
+            <div class="item-desc">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptates recusandae deserunt amet neque incidunt architecto tempore. Omnis tenetur veritatis rem ipsum quaerat natus assumenda iusto quod. Possimus, aut velit.
+                </p>
+            </div>
+            <div class="item-price">
+                $145
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const item_prod = urlParams.get('item');
+    const item_img =  urlParams.get('img'); //путь к новой картинке
+
+    console.log("item_prod:" + item_prod);
+    console.log("item_img:" + item_img); 
+
+    var item_header =  document.getElementById("item_header");
+    item_header.innerHTML = "PRODUCT ID " + item_prod; 
+    
+
+    var item_img_html = document.getElementById("item_img");
+    item_img_html.src = "img/" + item_img;  
+
+    //ЗАДАНИЕ ВСТАВИТЬ В IMG НОВЫЙ SRC 
+
+
+
+
+    // var contentHeader =  document.getElementById("item_header").innerHTML;  
+    // console.log(contentHeader);    
+
+    // document.getElementById("item_header").innerHTML = "ITEM " + item_prod;  
+
+
+     
+
+
+</script>
+
+</html>

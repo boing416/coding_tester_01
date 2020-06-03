@@ -1,0 +1,49 @@
+.main, .header, .items{
+    /* border: 1px solid red;  */
+}
+
+.main{  
+    margin: 20px;
+    margin-left: 200px;
+    margin-right: 200px; 
+}
+
+.header{
+    height: 150px;
+    margin-bottom: 20px; 
+    background-image: url("../img/header.png");  
+}
+
+.header h2{
+    color: white;
+    text-align: center;
+    font-size: 61px;
+} 
+
+.items{
+    height: 1000px;
+}
+
+.item { 
+    /* border: 1px solid red; */
+    margin: 20px;
+    display: flex;
+}
+.item div{
+    margin-left: 20px;
+}
+.item img{
+   width: 150px;  
+}
+
+
+.item-main{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.item-left{
+    float: left;
+}
+.item-left img{ 
+    width: 300px;
+}
